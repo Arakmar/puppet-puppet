@@ -5,7 +5,7 @@ class puppet::rsyslog::client(
     $logdir = '/var/log/puppet'
 ) {
     file { '/etc/rsyslog.d/puppet-agent.conf':
-        content => template('puppet-puppet/rsyslog/client/puppet-agent.conf'),
+        content => template('puppet/rsyslog/client/puppet-agent.conf'),
         owner   => 'root',
         group   => 'root',
         mode    => '640',
